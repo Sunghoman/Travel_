@@ -104,6 +104,13 @@ main {
   background-color: #adbac6;
 }
 
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .post {
   background-color: #fff;
   padding: 20px;
