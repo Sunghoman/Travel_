@@ -156,6 +156,12 @@ h1 {
   min-height: 150px;
 }
 
+.tags {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
 .tag {
   background: tomato;
   border-radius: 50px;
@@ -166,6 +172,7 @@ h1 {
   text-transform: uppercase;
   cursor: pointer;
   margin-bottom: 15px;
+  margin-right: 10px;
 }
 .tag-teal {
   background-color: #47bcd4;
