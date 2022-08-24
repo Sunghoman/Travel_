@@ -120,7 +120,7 @@ main {
   display: flex;
 }
 .post:hover {
-  transform: translateX(7%);
+  transform: scale(1.1);
   transition: all 0.5s;
 }
 
@@ -145,3 +145,52 @@ main {
 }
 
 /* 본문 끝 */
+
+/* 본문 2 시작 */
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  margin: 30px auto;
+  width: 800px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card1 .card-img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+.card-img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+.card1 .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -200px;
+  height: 40px;
+}
+.card1:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+}
+.card_title {
+  color: #FFF;
+}
+.card_title p {
+  margin-top: 25px;
+}
+/* 본문 2 끝 */
