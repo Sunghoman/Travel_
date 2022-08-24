@@ -105,6 +105,9 @@ video {
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
+  background: rgba(0,0,0,0.3);
+  background-blend-mode: multiply;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
 }
 
 .card1 {

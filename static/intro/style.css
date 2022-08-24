@@ -72,30 +72,6 @@ h1 {
   text-transform: uppercase;
 }
 
-video {
-  width: 100%;
-  background-position: center;
-  object-fit: fill;
-}
-.main-bg {
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  text-align: center;
-  letter-spacing: 2px;
-}
-.main-text {
-  position: absolute;
-  width: 100%;
-  top: 25%;
-}
-.main-bg h1 span {
-  overflow: hidden;
-  text-align: center;
-  font-size: 50px;
-  color: #000000a9;
-  border-bottom: 5px solid #000000a9;
-}
 
 /* 본문 2 시작 */
 .cards-list {
@@ -105,6 +81,9 @@ video {
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
+  background: rgba(0,0,0,0.3);
+  background-blend-mode: multiply;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
 }
 
 .card1 {
