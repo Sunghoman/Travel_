@@ -99,6 +99,7 @@ video {
 
 /* 본문 2 시작 */
 .cards-list {
+  padding-top: 125px;
   z-index: 0;
   width: 100%;
   display: flex;
