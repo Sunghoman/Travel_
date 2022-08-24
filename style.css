@@ -93,64 +93,16 @@ video {
   overflow: hidden;
   text-align: center;
   font-size: 50px;
-  color: #000000;
-  border-bottom: 5px solid #000000;
+  color: #000000a9;
+  border-bottom: 5px solid #000000a9;
 }
-
-/* 본문 시작 */
-main {
-  padding: 10px;
-  padding-top: 150px;
-  background-color: #adbac6;
-}
-
-.posts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.post {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 35px;
-  width: 900px;
-  display: flex;
-}
-.post:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
-}
-
-.post img {
-  margin: 20px;
-  width: 350px;
-}
-
-.post-desc {
-  color: #1e262d;
-  margin-top: 20px;
-  padding: 10px;
-  width: 100%;
-}
-
-.heart {
-  width: 120px;
-  height: 30px;
-  color: #f77;
-  text-align: right;
-  box-shadow: #1e262d;
-}
-
-/* 본문 끝 */
 
 /* 본문 2 시작 */
 .cards-list {
   z-index: 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
 }
