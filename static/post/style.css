@@ -215,7 +215,51 @@ h1 {
 }
 .submit-btn:hover {
   background-color: #03afb8;
+  color: #FFF;
   transition: all 0.5s;
+}
+
+.post-rate i, .post-rate:hover ~ i {
+  font-size: 35px;
+  color: #222;
+  text-shadow: none;
+  transition: color 200ms; text-shadow: 200ms;
+  transition-delay: 0;
+}
+
+.post-rate:hover i {
+  color: #fc0;
+  text-shadow: #fc0 0 0 20px;
+}
+.post-rate:hover i:nth-child(2) {
+  transition-delay: 30ms;
+}
+.post-rate:hover i:nth-child(3) {
+  transition-delay: 60ms;
+}
+.post-rate:hover i:nth-child(4) {
+  transition-delay: 90ms;
+}
+.post-rate:hover i:nth-child(5) {
+  transition-delay: 120ms;
+}
+
+.post-rate i {
+  cursor: pointer;
+  font-style: normal;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1rem;
+  color: #fc0;
+  font-size: 20px;
+  background-color: #222;
+  cursor: pointer;
 }
 /* 포스팅 끝 */
 
@@ -318,8 +362,9 @@ h1 {
   margin-right: 10px;
 }
 .tag-teal {
-  background-color: #47bcd4;
+  background-color: #717c7e;
   transition: all 0.3s;
+  color: #fc0;
 }
 .tag-teal:hover {
   background-color: #388c9c;
