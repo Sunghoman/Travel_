@@ -271,12 +271,11 @@ select {
   flex-wrap: wrap;
   margin: auto;
   width: 1040px;
-  /* width: 1040px */ /*근데 양 옆에 뭐가 생김 ㅠ */
 }
 
 .card {
   margin: 10px;
-  margin-top: 0px;
+  margin-top: 30px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 2px 20px rgba(0,0,0,0.4);
