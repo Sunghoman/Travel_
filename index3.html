@@ -22,151 +22,123 @@
   </nav>
   <!-- nav bar 끝 -->
 
+  <!-- 포스팅 모달창 시작 -->
+  <div id="popup" class="popup">
+    <a href="#" class="close">&times;</a>
+    <h2>Posting</h2>
+    <form class="posting">
+      <div class="user-box">
+        <input type="text" id="post-img" name="" required="">
+        <label>Image URL</label>
+      </div>
+      <div class="user-box">
+        <input id="post-title" type="text" name="" required="">
+        <label>Title</label>
+      </div>
+      <div class="user-box">
+        <input id="post-comment" name="" required="">
+        <label>Comment</label>
+      </div>
+      <div class="user-box">
+        <input id="post-username" type="text" name="" required="">
+        <label>Username</label>
+      </div>
+      <button class="submit-btn" onclick="posting()">Submit</button>
+    </form>
+  </div>
+  <a href="#" class="close-popup"></a>
+  <!-- 포스팅 모달창 시작 -->
+
+  <!--포스팅 버튼 시작-->
+  <div>
+    <a class="post-btn" href="#popup">posting</a>
+  </div>
+  <!--포스팅 버튼 끝-->
+
+
   <div class="container">
 
-      <div class="card">
-        <div class="card-header">
-          <a href="#">
-            <figure>
-              <img src="https://item.kakaocdn.net/do/c5c470298d527ef65eb52883f0f186c49f17e489affba0627eb1eb39695f93dd">
-              <figcaption>자세히 보기</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="card-body">
-          <div class="tags">
-            <span class="tag tag-teal">해쉬태그1</span>
-            <span class="tag tag-teal">해쉬태그2</span>
-            <span class="tag tag-teal">해쉬태그3</span>
-          </div>
-          <h4>
-            지역명 관광지명
-          </h4>
-          <p>
-            내용
-          </p>
-        </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="#">
+          <figure>
+            <img src="https://item.kakaocdn.net/do/c5c470298d527ef65eb52883f0f186c49f17e489affba0627eb1eb39695f93dd">
+            <figcaption>자세히 보기</figcaption>
+          </figure>
+        </a>
       </div>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-teal">해쉬태그1</span>
+          <span class="tag tag-teal">해쉬태그2</span>
+          <span class="tag tag-teal">해쉬태그3</span>
+        </div>
+        <h4>
+          지역명 관광지명
+        </h4>
+        <p>
+          내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 
+        </p>
+        <p>
+          - 작성자
+        </p>
+      </div>
+    </div>
 
-      <div class="card">
-        <div class="card-header">
-          <a href="#">
-            <figure>
-              <img src="https://item.kakaocdn.net/do/c5c470298d527ef65eb52883f0f186c49f17e489affba0627eb1eb39695f93dd">
-              <figcaption>자세히 보기</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="card-body">
-          <div class="tags">
-            <span class="tag tag-teal">해쉬태그1</span>
-            <span class="tag tag-teal">해쉬태그2</span>
-            <span class="tag tag-teal">해쉬태그3</span>
-          </div>
-          <h4>
-            지역명 관광지명
-          </h4>
-          <p>
-            내용
-          </p>
-        </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="#">
+          <figure>
+            <img src="https://item.kakaocdn.net/do/c5c470298d527ef65eb52883f0f186c49f17e489affba0627eb1eb39695f93dd">
+            <figcaption>자세히 보기</figcaption>
+          </figure>
+        </a>
       </div>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-teal">해쉬태그1</span>
+          <span class="tag tag-teal">해쉬태그2</span>
+          <span class="tag tag-teal">해쉬태그3</span>
+        </div>
+        <h4>
+          지역명 관광지명
+        </h4>
+        <p>
+          내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 
+        </p>
+        <p>
+          - 작성자
+        </p>
+      </div>
+    </div>
 
-      <div class="card">
-        <div class="card-header">
-          <a href="#">
-            <figure>
-              <img src="https://item.kakaocdn.net/do/c5c470298d527ef65eb52883f0f186c49f17e489affba0627eb1eb39695f93dd">
-              <figcaption>자세히 보기</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="card-body">
-          <div class="tags">
-            <span class="tag tag-teal">해쉬태그1</span>
-            <span class="tag tag-teal">해쉬태그2</span>
-            <span class="tag tag-teal">해쉬태그3</span>
-          </div>
-          <h4>
-            지역명 관광지명
-          </h4>
-          <p>
-            내용
-          </p>
-        </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="#">
+          <figure>
+            <img src="https://item.kakaocdn.net/do/c5c470298d527ef65eb52883f0f186c49f17e489affba0627eb1eb39695f93dd">
+            <figcaption>자세히 보기</figcaption>
+          </figure>
+        </a>
       </div>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-teal">해쉬태그1</span>
+          <span class="tag tag-teal">해쉬태그2</span>
+          <span class="tag tag-teal">해쉬태그3</span>
+        </div>
+        <h4>
+          지역명 관광지명
+        </h4>
+        <p>
+          내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 
+        </p>
+        <p>
+          - 작성자
+        </p>
+      </div>
+    </div>
 
-      <div class="card">
-        <div class="card-header">
-          <a href="#">
-            <figure>
-              <img src="https://item.kakaocdn.net/do/c5c470298d527ef65eb52883f0f186c49f17e489affba0627eb1eb39695f93dd">
-              <figcaption>자세히 보기</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="card-body">
-          <div class="tags">
-            <span class="tag tag-teal">해쉬태그1</span>
-            <span class="tag tag-teal">해쉬태그2</span>
-            <span class="tag tag-teal">해쉬태그3</span>
-          </div>
-          <h4>
-            지역명 관광지명
-          </h4>
-          <p>
-            내용
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <a href="#">
-            <figure>
-              <img src="https://item.kakaocdn.net/do/c5c470298d527ef65eb52883f0f186c49f17e489affba0627eb1eb39695f93dd">
-              <figcaption>자세히 보기</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="card-body">
-          <div class="tags">
-            <span class="tag tag-teal">해쉬태그1</span>
-            <span class="tag tag-teal">해쉬태그2</span>
-            <span class="tag tag-teal">해쉬태그3</span>
-          </div>
-          <h4>
-            지역명 관광지명
-          </h4>
-          <p>
-            내용
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <a href="#">
-            <figure>
-              <img src="https://item.kakaocdn.net/do/c5c470298d527ef65eb52883f0f186c49f17e489affba0627eb1eb39695f93dd">
-              <figcaption>자세히 보기</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="card-body">
-          <div class="tags">
-            <span class="tag tag-teal">해쉬태그1</span>
-            <span class="tag tag-teal">해쉬태그2</span>
-            <span class="tag tag-teal">해쉬태그3</span>
-          </div>
-          <h4>
-            지역명 관광지명
-          </h4>
-          <p>
-            내용
-          </p>
-        </div>
-      </div>
   </div>
 
 </body>
