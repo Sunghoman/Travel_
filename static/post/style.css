@@ -281,10 +281,10 @@ img {
   margin-left: -40px;
 }
 
-.cards_item {
+.card-item {
   display: flex;
-  padding: 1rem;
-  transition: 0.5s;
+  padding: 0.3rem;
+  transition: all 0.3s
 }
 .card-item:hover {
   transform: scale(1.1);

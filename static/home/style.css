@@ -15,7 +15,6 @@ a {
 
 /* nav 시작 */
 .navbar {
-  top: 0;
   position: -webkit-sticky;
   position: sticky;
   display: flex;
