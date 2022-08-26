@@ -188,36 +188,6 @@ a {
   transition: all 0.5s;
 }
 
-.post-rate i, .post-rate:hover ~ i {
-  font-size: 35px;
-  color: #222;
-  text-shadow: none;
-  transition: color 200ms; text-shadow: 200ms;
-  transition-delay: 0;
-}
-
-.post-rate:hover i {
-  color: #fc0;
-  text-shadow: #fc0 0 0 20px;
-}
-.post-rate:hover i:nth-child(2) {
-  transition-delay: 30ms;
-}
-.post-rate:hover i:nth-child(3) {
-  transition-delay: 60ms;
-}
-.post-rate:hover i:nth-child(4) {
-  transition-delay: 90ms;
-}
-.post-rate:hover i:nth-child(5) {
-  transition-delay: 120ms;
-}
-
-.post-rate i {
-  cursor: pointer;
-  font-style: normal;
-}
-
 select {
   appearance: none;
   outline: 0;
