@@ -74,7 +74,7 @@ main {
   width: 25%;
   min-width: 25%;
   overflow: scroll;
-  height: 100vh;
+  height: 170vh;
   background: rgba(0,0,0,0.3);
   background-blend-mode: multiply;
   background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
@@ -171,17 +171,6 @@ img {
   padding: 0.3rem;
 }
 
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
-}
 
 .card {
   background-color: white;
@@ -255,6 +244,8 @@ img {
 
 .comments {
   background-color: whitesmoke;
+  overflow: scroll;
+  height: 60vh;
 }
 .comment {
   display: flex;
