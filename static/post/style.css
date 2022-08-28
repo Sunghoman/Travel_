@@ -217,10 +217,15 @@ h1 {
     text-align: center;
 }
 
+.card-image {
+  object-fit: cover;
+}
+
 img {
   display: block;
   overflow: hidden;
-  position: relative;
+  object-fit: cover;
+  max-height: 200px;
   height: auto;
   width: 100%;
 }
@@ -288,18 +293,6 @@ img {
 }
 .card-item:hover {
   transform: scale(1.1);
-}
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
 }
 
 .card {
