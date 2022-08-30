@@ -7,6 +7,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./static/post/style.css">
   <title>G.M.O</title>
+
+  <script>
+    $(document).ready(function() {
+      listing();
+    })
+
+    function listing() {
+      $.ajax({
+        type: "GET",
+        url: "/posts",
+        data: {},
+        success: function(res) {
+          console.log(res["posts"])
+        }
+      })
+    }
+  </script>
 </head>
 
 <body>
