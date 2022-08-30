@@ -239,7 +239,28 @@ img {
   background-color: rgba(213, 217, 221, 0.795);
 }
 .post-comment {
+  margin: 10px 50px 15px 50px;
   padding: 30px 10px 30px 50px;
+  background-color: rgb(238, 238, 238);
+}
+
+.post-comment span {
+  margin-left: 15px;
+}
+
+.post-comment button {
+  margin-left: 15px;
+  width: 10%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 1px;
+  padding: 10px 5px;
+  background: #27ae60;
+  font-weight: bold;
+}
+.post-comment button:hover, .post-comment button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
 }
 
 .comments {
@@ -251,19 +272,30 @@ img {
   display: flex;
   flex-direction: column;
   background: white;
-  margin: 10px 10px 15px 50px;
+  margin: 10px 50px 15px 50px;
   padding: 20px;
   border-radius: 20px;
   display: flex;
   border-bottom: 1px solid #0000001e;
 }
 
-.comment .close {
-  /* position: absolute;
-  right: 5px;
-  top: 5px;
-  padding: 20px;
-  font-size: 2em;
-  line-height: 1.5; */
+.comment-comment input {
+  width: 70%;
+  height: 3rem;
+  margin: 15px;
+  border: none;
+  border-bottom: 1px solid #757575;
 }
+
+.comment-profile {
+  width: 60%;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.comment-profile input {
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
 /* 본문 끝 */
