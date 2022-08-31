@@ -10,38 +10,54 @@
 
   <script>
     $(document).ready(function() {
-      listing();
+      post_list_call();
     })
 
-    function listing() {
+    function post_list_call() {
       $.ajax({
         type: "GET",
-        url: "/posts",
+        url: "/post",
         data: {},
         success: function(res) {
-          console.log(res["posts"])
-          let rows = res["posts"]
-          for (let i = 0; i < rows.length; i++){
-            console.log("a")
+          console.log(res)
+          let posts = res["posts"]
+          for (let i = 0; i < posts.length; i++) {
+            let title = posts[i]["title"]
+            let img = posts[i]["img"]
+            let comment = posts[i]["comment"]
+
+            let temp_html = `
+              <li class="card-item">
+                <div class="card">
+                    <div class="card-image"><img src="${img}"></div>
+                    <div class="card_content">
+                    <h2 class="card_title">${title}</h2>
+                    <p class="card_text">${comment}</p>
+                    <a href="/detail"><button class="btn card_btn">Read More</button></a>
+                  </div>
+                </div>
+              </li>
+            `
+            $(".cards").append(temp_html)
           }
         }
       })
     }
 
     function posting() {
-      let rate = document.getElementById("post-star").value
-      let img = document.getElementById("post-img").value
+      let star = document.getElementById("post-star").value
+      let image = document.getElementById("post-img").value
       let title = document.getElementById("post-title").value
       let comment = document.getElementById("post-comment").value
       let username = document.getElementById("post-username").value
 
       $.ajax({
         type: "POST",
-        url: "/posts",
-        data: {rate_give: rate, img_give: img, title_give: title, comment_give: comment, username_give: username},
+        url: "/post",
+        data: {star_give: star, image_give: image, title_give: title, comment_give: comment, username_give: username},
         success: function(res) {
           alert(res["msg"])
-          window.location.href('/post')
+          window.location.replace("/post_list")
         }
       })
     }
@@ -66,10 +82,10 @@
   <div id="popup" class="popup">
     <a href="#" class="close">&times;</a>
     <h2>Posting</h2>
-    <form class="posting" method="post" enctype="multipart/form-data">
+    <form class="posting">
       <div>별점을 선택해주세요</div>
       <div class="user-box">
-        <select id="post-star">
+        <select id="post-star" name="star">
           <option value="1">⭑</option>
           <option value="2">⭑⭑</option>
           <option value="3">⭑⭑⭑</option>
@@ -78,20 +94,20 @@
         </select>
       </div>
       <div class="user-box">
-        <input type="text" id="post-img" name="" required="">
+        <input type="text" id="post-img" name="file" required="">
         <label>Image</label>
       </div>
       <div class="user-box">
-        <input id="post-title" type="text" name="" required="">
+        <input id="post-title" type="text" name="title" required="">
         <label>Title</label>
       </div>
       <div class="user-box">
-        <input id="post-comment" name="" required="">
+        <input id="post-comment" name="desc" required="">
         <label>Comment</label>
       </div>
 
       <div class="user-box">
-        <input id="post-username" type="text" name="" required="">
+        <input id="post-username" type="text" name="writerid" required="">
         <label>Username</label>
       </div>
       <button class="submit-btn" onclick="posting()">Submit</button>

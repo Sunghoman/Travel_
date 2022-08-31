@@ -74,7 +74,7 @@ main {
   width: 25%;
   min-width: 25%;
   overflow: scroll;
-  height: 180vh;
+  height: 200vh;
   background: rgba(0,0,0,0.3);
   background-blend-mode: multiply;
   background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
@@ -225,8 +225,13 @@ img {
 }
 
 .content-title {
-  padding: 50px;
-  border-bottom: 3px solid #000000a9;
+  padding: 30px 50px 10px 50px;
+  background-color: #dedede;
+  border-bottom: 1px solid black;
+}
+
+.content-desc {
+  padding: 25px 50px 50px 50px;
 }
 
 .star-rate {
