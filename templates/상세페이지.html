@@ -78,19 +78,23 @@
         <span> 댓글 {n}개</span>
       </div>
 
-      <div class="post-comment">
-        <span>댓글달기</span>
-        <div class="comment-comment">
-          <input placeholder="Add Comment...">
+      <form class="post-comment">
+        <label class="col-one-half">
+          <span class="label-text">Author</span>
+          <input type="text" name="author">
+        </label>
+        <label class="col-one-half">
+          <span class="label-text">Password</span>
+          <input type="password" name="password">
+        </label>
+        <label>
+          <span>Comment</span>
+          <input type="text" name="comment">
+        </label>
+        <div class="submit-btn">
+          <button class="submit">나도 한 마디</button>
         </div>
-        <div class="comment-profile">
-          <input placeholder="Author">
-          <input placeholder="Password">
-        </div>
-        <div>
-          <button>나도 한 마디</button>
-        </div>
-      </div>
+      </form>
 
       <div class="comments">
 
